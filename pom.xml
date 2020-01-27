@@ -14,7 +14,18 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>jenkins-demo1-releases</name>
+        <url>http://35.200.183.199:8081/artifactory/sujeeth-repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>jenkins-demo1-snapshots</name>
+        <url>http://35.200.183.199:8081/artifactory/sujeeth-repo</url>
+    </snapshotRepository>
+</distributionManagement>
    <dependencies>
         <dependency>
             <groupId>junit</groupId>
